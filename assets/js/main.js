@@ -87,7 +87,7 @@ const PROYECTOS = [
             "💥 <strong>Servidores que se cuelgan por falta de memoria:</strong> Evita que Linux cierre la base de datos o la web por quedarse sin RAM, configurando 2 GB de memoria virtual (Swap) en disco SSD rápido.",
             "🛡️ <strong>Seguridad del servidor:</strong> Configura automáticamente las reglas de firewall (iptables) y accesos protegidos para que la máquina no sea vulnerable a ataques."
         ],
-        stack: ["Python 3", "Bash", "Oracle OCI API", "Linux (Ubuntu)", "SSH Keys", "Nginx"],
+        stack: ["Python 3", "Oracle OCI API", "Cloud VPS & SSH", "Nginx", "DevOps"],
         enlaces: {
             proximamente: "Próximamente en GitHub"
         }
@@ -137,7 +137,7 @@ const PROYECTOS = [
             "📉 <strong>Pérdida de stock y descontrol de precios:</strong> Elimina el error humano automatizando el cálculo de márgenes y actualizando inventarios al instante.",
             "💸 <strong>Altos costos de sistemas enlatados:</strong> Ofrece una solución a medida sin tarifas mensuales por usuario ni ataduras a plataformas propietarias."
         ],
-        stack: ["PHP 8", "MySQL", "JavaScript ES6+", "Nginx", "Linux Ubuntu Server", "Seguridad Web"],
+        stack: ["PHP 8", "MySQL", "JavaScript ES6+", "Nginx", "Cloud VPS", "Seguridad Web"],
         enlaces: {
             proximamente: "En Desarrollo"
         }
