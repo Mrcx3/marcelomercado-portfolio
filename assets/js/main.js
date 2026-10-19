@@ -34,8 +34,8 @@ const PROYECTOS = [
         stack: ["Godot 4.3", "Python 3", "Local LLMs", "Faster-Whisper / Vosk", "Piper TTS", "Win32 API", "REST API"],
         enlaces: {
             web: "http://baity-mx3.duckdns.org/baity/",
-            github: "https://github.com/Mrcx3/Baity-",
-            descarga: "https://github.com/Mrcx3/Baity-/releases/latest/download/Baity_Core.zip"
+            descarga: "https://github.com/Mrcx3/Baity-/releases/latest/download/Baity_Core.zip",
+            proximamente: "Repo Privado (En Auditoría)"
         }
     },
     {
@@ -64,7 +64,7 @@ const PROYECTOS = [
         stack: ["PHP 8.2", "MySQL / MariaDB", "RESTful JSON API", "PHPMailer", "Nginx", "HTML5 / CSS3", "Seguridad Web"],
         enlaces: {
             web: "http://baity-mx3.duckdns.org/baity/",
-            github: "https://github.com/Mrcx3/Baity-Web"
+            proximamente: "Repo Privado (En Auditoría)"
         }
     },
     {
@@ -89,7 +89,7 @@ const PROYECTOS = [
         ],
         stack: ["Python 3", "Bash", "Oracle OCI API", "Linux (Ubuntu)", "SSH Keys", "Nginx"],
         enlaces: {
-            github: "https://github.com/Mrcx3/Oracle-VPS-Automation"
+            proximamente: "Próximamente en GitHub"
         }
     },
     {
@@ -114,7 +114,7 @@ const PROYECTOS = [
         ],
         stack: ["Python 3", "llama.cpp", "OpenWebUI", "OpenCode", "MCP (Puppeteer)", "Batch (.bat)", "GGUF MoE"],
         enlaces: {
-            github: "https://github.com/Mrcx3"
+            proximamente: "Próximamente en GitHub"
         }
     },
     {
@@ -125,7 +125,7 @@ const PROYECTOS = [
         destacado: false,
         estado: "dev",
         estadoLabel: "Próximo Proyecto / En Desarrollo",
-        imagen: "assets/img/mx3_project_logo.gif",
+        imagen: "assets/img/mx3_project_logo.png",
         resumen: "Plataforma web centralizada para comercios mayoristas y distribuidores: gestión de inventario multinivel, listas de precios diferenciadas, control de cuentas corrientes, facturación y panel de administración en PHP 8 y MySQL.",
         caracteristicas: [
             "📊 <strong>Gestión de Inventario Multinivel:</strong> Control en tiempo real de existencias, alertas automáticas de stock crítico y categorización avanzada de artículos.",
@@ -139,7 +139,7 @@ const PROYECTOS = [
         ],
         stack: ["PHP 8", "MySQL", "JavaScript ES6+", "Nginx", "Linux Ubuntu Server", "Seguridad Web"],
         enlaces: {
-            github: "https://github.com/Mrcx3"
+            proximamente: "En Desarrollo"
         }
     }
 ];
@@ -188,6 +188,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
                         Ver Plataforma Web
                     </a>
+                `;
+            }
+            if (p.enlaces.proximamente) {
+                accionesHtml += `
+                    <span class="btn-card btn-card-disabled">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        ${p.enlaces.proximamente}
+                    </span>
                 `;
             }
             if (p.enlaces.github) {
