@@ -93,25 +93,51 @@ const PROYECTOS = [
         }
     },
     {
-        id: "proximo-proyecto",
-        titulo: "Mx3 Studio — Próxima Suite Web & API",
-        categoria: "web",
-        categoriaLabel: "Próximo Desarrollo",
-        destacado: false,
-        estado: "dev",
-        estadoLabel: "En Desarrollo",
-        imagen: "assets/img/mx3_project_logo.gif",
-        resumen: "Laboratorio y base de desarrollo modular para mis próximas aplicaciones web. Un entorno escalable con arquitectura limpia para lanzar futuros proyectos, herramientas y microservicios de forma rápida.",
+        id: "local-ai-suite",
+        titulo: "Local AI & RAG Orchestration Suite (OpenWebUI, OpenCode & llama.cpp)",
+        categoria: "tools",
+        categoriaLabel: "Automatización & IA Local",
+        destacado: true,
+        estado: "prod",
+        estadoLabel: "En Uso / Producción",
+        imagen: "assets/img/cazador_cloud_demo.gif",
+        resumen: "Entorno integral de Inteligencia Artificial 100% offline y privado. Orquestación de modelos masivos (Qwen 35B MoE) mediante llama.cpp, RAG para consulta de documentos, OpenCode con protocolo MCP (Puppeteer) para navegación web automatizada y scripts batch de auto-actualización.",
         caracteristicas: [
-            "💎 <strong>Identidad Mx3 (Triple M):</strong> Monograma exclusivo y arquitectura modular construida para escalabilidad de largo plazo.",
-            "📦 <strong>Estructura Desacoplada:</strong> Despliegue modular en subdominio con virtual host propio en Nginx y base de datos independiente.",
-            "🚀 <strong>Integración Continua:</strong> Repositorio Git estructurado con releases automatizados y documentación técnica."
+            "🧠 <strong>Orquestación de LLMs Masivos (MoE):</strong> Carga y parametrización de modelos cuantizados GGUF (Qwen 3.6 35B A3B) con gestión avanzada de hilos de CPU y caché de memoria.",
+            "📚 <strong>RAG Local (Retrieval-Augmented Generation):</strong> Extracción y procesamiento de documentos y PDFs para consulta inteligente sin conexión a internet.",
+            "🌐 <strong>Protocolo MCP (Model Context Protocol):</strong> Integración con Puppeteer para otorgarle al modelo capacidades de navegación web y extracción de datos en vivo.",
+            "🔄 <strong>Mantenimiento Automatizado (.bat / Python):</strong> Scripts de un solo clic para actualización desatendida de OpenWebUI, OpenCode y binarios de llama.cpp."
         ],
         problemas: [
-            "🧩 <strong>Monolitos difíciles de mantener:</strong> Promueve arquitecturas limpias y desacopladas para que cada nuevo desarrollo sea fácil de testear, desplegar y escalar.",
-            "⚡ <strong>Tiempos de carga lentos:</strong> Prioriza código optimizado sin dependencias innecesarias para maximizar el rendimiento en servidores ligeros."
+            "🔒 <strong>Privacidad absoluta de datos confidenciales:</strong> Ningún documento, código o consulta sale de tu hardware hacia servidores de terceros en la nube.",
+            "⚙️ <strong>Fricción técnica de configuración:</strong> Automatiza el arranque, el ajuste de rendimiento de Windows y las actualizaciones continuas sin esfuerzo manual."
         ],
-        stack: ["PHP 8", "MySQL", "JavaScript ES6+", "TailwindCSS", "REST API"],
+        stack: ["Python 3", "llama.cpp", "OpenWebUI", "OpenCode", "MCP (Puppeteer)", "Batch (.bat)", "GGUF MoE"],
+        enlaces: {
+            github: "https://github.com/Mrcx3"
+        }
+    },
+    {
+        id: "mayorista-erp",
+        titulo: "Mayorista ERP — Sistema Integral de Gestión Comercial & Facturación",
+        categoria: "web",
+        categoriaLabel: "Plataforma Web / ERP Empresarial",
+        destacado: false,
+        estado: "dev",
+        estadoLabel: "Próximo Proyecto / En Desarrollo",
+        imagen: "assets/img/mx3_project_logo.gif",
+        resumen: "Plataforma web centralizada para comercios mayoristas y distribuidores: gestión de inventario multinivel, listas de precios diferenciadas, control de cuentas corrientes, facturación y panel de administración en PHP 8 y MySQL.",
+        caracteristicas: [
+            "📊 <strong>Gestión de Inventario Multinivel:</strong> Control en tiempo real de existencias, alertas automáticas de stock crítico y categorización avanzada de artículos.",
+            "🏷️ <strong>Listas de Precios Diferenciadas:</strong> Asignación flexible de precios mayoristas, minoristas y promocionales por tipo de cliente o volumen de compra.",
+            "👥 <strong>Cuentas Corrientes & Facturación:</strong> Seguimiento detallado de saldos pendientes, historial de compras de clientes y emisión de comprobantes.",
+            "🔒 <strong>Arquitectura Empresarial en PHP 8 & MySQL:</strong> Despliegue en servidor propio (Oracle Cloud) con roles de usuario jerárquicos y aislamiento de datos."
+        ],
+        problemas: [
+            "📉 <strong>Pérdida de stock y descontrol de precios:</strong> Elimina el error humano automatizando el cálculo de márgenes y actualizando inventarios al instante.",
+            "💸 <strong>Altos costos de sistemas enlatados:</strong> Ofrece una solución a medida sin tarifas mensuales por usuario ni ataduras a plataformas propietarias."
+        ],
+        stack: ["PHP 8", "MySQL", "JavaScript ES6+", "Nginx", "Linux Ubuntu Server", "Seguridad Web"],
         enlaces: {
             github: "https://github.com/Mrcx3"
         }
