@@ -33,7 +33,7 @@ const PROYECTOS = [
         ],
         stack: ["Godot 4.3", "Python 3", "Local LLMs", "Faster-Whisper / Vosk", "Piper TTS", "Win32 API", "REST API"],
         enlaces: {
-            web: "http://146.181.24.196/baity/",
+            web: "http://baity-mx3.duckdns.org/baity/",
             github: "https://github.com/Mrcx3/Baity-",
             descarga: "https://github.com/Mrcx3/Baity-/releases/latest/download/Baity_Core.zip"
         }
@@ -63,7 +63,7 @@ const PROYECTOS = [
         ],
         stack: ["PHP 8.2", "MySQL / MariaDB", "RESTful JSON API", "PHPMailer", "Nginx", "HTML5 / CSS3", "Seguridad Web"],
         enlaces: {
-            web: "http://146.181.24.196/baity/",
+            web: "http://baity-mx3.duckdns.org/baity/",
             github: "https://github.com/Mrcx3/Baity-Web"
         }
     },
