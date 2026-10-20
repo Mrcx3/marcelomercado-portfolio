@@ -18,7 +18,7 @@ const PROYECTOS = [
         rol: "Desarrollador de Software & Arquitectura Local",
         estadoLabel: "Versión v0.1 (Beta Abierta)",
         imagen: "assets/img/baity_desktop_demo.gif",
-        resumen: "Asistente inteligente para Windows con interfaz interactiva transparente. Podés pedirle por voz que abra programas a una hora programada (como Discord o navegadores), agendar recordatorios en su calendario y pedirle ayuda visual en pantalla; todo funcionando 100% en tu propia PC sin pagar suscripciones mensuales.",
+        resumen: "Asistente inteligente para Windows con interfaz interactiva transparente. Podés pedirle por voz que abra programas a una hora programada (como Discord o navegadores), agendar recordatorios en su calendario y pedirle ayuda visual en pantalla; con inferencia y reconocimiento de voz procesados en tu propia PC sin pagar suscripciones mensuales.",
         caracteristicas: [
             "🎙️ <strong>Activación y Control por Voz:</strong> Detección de palabra clave (Wake-word), transcripción rápida de voz a texto (STT) y respuesta hablada con voces naturales sintetizadas (TTS).",
             "⏰ <strong>Programador de Tareas & Agenda:</strong> Calendario interactivo integrado para crear recordatorios, eventos y alarmas con alertas visuales y auditivas en pantalla.",
@@ -28,7 +28,7 @@ const PROYECTOS = [
         ],
         problemas: [
             "🧩 <strong>Fricción y pérdida de tiempo:</strong> Automatiza la apertura y monitoreo de herramientas cotidianas para que no pierdas el foco buscando programas o cambiando de ventanas.",
-            "💸 <strong>Costos elevados de suscripciones:</strong> Reemplaza asistentes comerciales en la nube que cobran cuotas en dólares por una solución 100% gratuita y sin conexión obligatoria a internet.",
+            "💸 <strong>Costos elevados de suscripciones:</strong> Reemplaza asistentes comerciales en la nube que cobran cuotas en dólares por una solución gratuita bajo arquitectura Local-First.",
             "🔒 <strong>Riesgos de privacidad y fuga de datos:</strong> Al operar bajo filosofía Local-First, ningún comando de voz, captura de pantalla o texto sale jamás de tu computadora.",
             "♿ <strong>Barreras de accesibilidad:</strong> Brinda una compañía amigable con retroalimentación visual y control por voz accesible para usuarios de cualquier edad o condición."
         ],
@@ -53,7 +53,7 @@ const PROYECTOS = [
             "🏛️ <strong>Arquitectura MVC en PHP 8.2:</strong> Separación estricta de responsabilidades (Modelos, Vistas, Controladores) sin frameworks pesados, con Singleton en conexión a base de datos para cuidar la memoria RAM.",
             "🔌 <strong>API RESTful JSON:</strong> Endpoints de alta velocidad consumidos por el cliente de escritorio Godot para login criptográfico y sincronización instantánea de inventario.",
             "🛒 <strong>Marketplace de Mascotas & Créditos:</strong> Sistema de catálogo dinámico, adopción de personajes animados y gestión de perfiles de usuario.",
-            "🛡️ <strong>Seguridad y Hardening:</strong> PDO con consultas preparadas nativas contra inyecciones SQL, hashing de contraseñas con Argon2/Bcrypt y sesiones seguras (HttpOnly, SameSite).",
+            "🛡️ <strong>Seguridad y Hardening:</strong> PDO con consultas preparadas nativas contra inyecciones SQL, hashing de contraseñas con Bcrypt y sesiones seguras (HttpOnly, SameSite).",
             "✉️ <strong>Correos Transaccionales (PHPMailer):</strong> Recuperación segura de contraseñas mediante tokens criptográficos aleatorios con caducidad temporal."
         ],
         problemas: [
