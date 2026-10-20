@@ -15,7 +15,8 @@ const PROYECTOS = [
         categoriaLabel: "Software de Escritorio / IA Local",
         destacado: true,
         estado: "prod",
-        estadoLabel: "Producción v1.0",
+        rol: "Desarrollador de Software & Arquitectura Local",
+        estadoLabel: "Versión v0.1 (Beta Abierta)",
         imagen: "assets/img/baity_desktop_demo.gif",
         resumen: "Asistente inteligente para Windows con interfaz interactiva transparente. Podés pedirle por voz que abra programas a una hora programada (como Discord o navegadores), agendar recordatorios en su calendario y pedirle ayuda visual en pantalla; todo funcionando 100% en tu propia PC sin pagar suscripciones mensuales.",
         caracteristicas: [
@@ -31,7 +32,7 @@ const PROYECTOS = [
             "🔒 <strong>Riesgos de privacidad y fuga de datos:</strong> Al operar bajo filosofía Local-First, ningún comando de voz, captura de pantalla o texto sale jamás de tu computadora.",
             "♿ <strong>Barreras de accesibilidad:</strong> Brinda una compañía amigable con retroalimentación visual y control por voz accesible para usuarios de cualquier edad o condición."
         ],
-        stack: ["Godot 4.3", "Python 3", "Local LLMs", "Faster-Whisper / Vosk", "Piper TTS", "Win32 API", "REST API"],
+        stack: ["Godot 4.3", "Python 3", "Local LLMs", "Faster-Whisper / Vosk", "Edge-TTS / SAPI", "Win32 API", "REST API"],
         enlaces: {
             descarga: "https://github.com/Mrcx3/Baity-/releases/download/v0.1/Baity_Core.zip",
             github: "https://github.com/Mrcx3/Baity-"
@@ -44,7 +45,8 @@ const PROYECTOS = [
         categoriaLabel: "Plataforma Web / API REST",
         destacado: true,
         estado: "prod",
-        estadoLabel: "Producción",
+        rol: "Desarrollador Backend Full Stack",
+        estadoLabel: "Desplegado en Producción",
         imagen: "assets/img/baity_web_demo.gif",
         resumen: "Sitio web oficial de Baity donde los usuarios pueden registrarse, explorar el catálogo de skins, adoptar mascotas con créditos virtuales y gestionar su perfil, conectado a una base de datos central que se comunica en tiempo real con la app de escritorio.",
         caracteristicas: [
@@ -73,7 +75,8 @@ const PROYECTOS = [
         categoriaLabel: "Automatización & Cloud",
         destacado: false,
         estado: "prod",
-        estadoLabel: "Herramienta Activa",
+        rol: "DevOps & Automatización Cloud",
+        estadoLabel: "Herramienta Interna",
         imagen: "assets/img/cazador_cloud_demo.gif",
         resumen: "Script inteligente creado para conseguir cupo en los codiciados servidores gratuitos de Oracle Cloud (Always Free). Monitorea la disponibilidad 24/7 y reclama una máquina apenas se libera un lugar, configurando automáticamente el servidor con memoria virtual y seguridad lista para usar.",
         caracteristicas: [
@@ -98,7 +101,8 @@ const PROYECTOS = [
         categoriaLabel: "Automatización & IA Local",
         destacado: true,
         estado: "prod",
-        estadoLabel: "En Uso / Producción",
+        rol: "Integrador & Arquitecto de IA Local",
+        estadoLabel: "Entorno Local Configurado",
         imagen: "assets/img/cazador_cloud_demo.gif",
         resumen: "Entorno integral de Inteligencia Artificial 100% offline y privado. Orquestación de modelos masivos (Qwen 35B MoE) mediante llama.cpp, RAG para consulta de documentos, OpenCode con protocolo MCP (Puppeteer) para navegación web automatizada y scripts batch de auto-actualización.",
         caracteristicas: [
@@ -123,7 +127,8 @@ const PROYECTOS = [
         categoriaLabel: "Plataforma Web / ERP Empresarial",
         destacado: false,
         estado: "dev",
-        estadoLabel: "Próximo Proyecto / En Desarrollo",
+        rol: "Desarrollador Web Full Stack",
+        estadoLabel: "En Desarrollo",
         imagen: "assets/img/mx3_project_logo.png",
         resumen: "Plataforma web centralizada para comercios mayoristas y distribuidores: gestión de inventario multinivel, listas de precios diferenciadas, control de cuentas corrientes, facturación y panel de administración en PHP 8 y MySQL.",
         caracteristicas: [
@@ -225,6 +230,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="card-body">
                     <span class="card-category">${p.categoriaLabel}</span>
                     <h3 class="card-title">${p.titulo}</h3>
+                    <div class="project-ficha-meta">
+                        <div class="ficha-item"><strong>Rol:</strong> <span>${p.rol || "Desarrollador"}</span></div>
+                        <div class="ficha-item"><strong>Estado:</strong> <span>${p.estadoLabel}</span></div>
+                    </div>
                     <p class="card-resumen">${p.resumen}</p>
                     
                     <!-- Acordeones Colapsados por Defecto -->
@@ -250,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <summary class="accordion-header">
                                 <span class="accordion-header-title">
                                     <span class="accordion-icon">🎯</span>
-                                    <span>Problemas que Resuelve el Software</span>
+                                    <span>Qué Problemas Resolví & Valor Aportado</span>
                                 </span>
                                 <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
                             </summary>

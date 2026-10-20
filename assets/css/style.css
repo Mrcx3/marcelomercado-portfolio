@@ -940,3 +940,24 @@ body {
         justify-content: center;
     }
 }
+
+/* Ficha técnica de proyectos */
+.project-ficha-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 14px 0 16px 0;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 0.84rem;
+}
+.project-ficha-meta .ficha-item strong {
+    color: var(--cyan);
+    margin-right: 4px;
+}
+.project-ficha-meta .ficha-item span {
+    color: var(--text-main);
+    font-weight: 500;
+}
