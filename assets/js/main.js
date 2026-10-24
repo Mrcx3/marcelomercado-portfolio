@@ -20,11 +20,11 @@ const PROYECTOS = [
         imagen: "assets/img/baity_desktop_demo.gif",
         resumen: "Asistente inteligente para Windows con interfaz interactiva transparente. Podés pedirle por voz que abra programas a una hora programada (como Discord o navegadores), agendar recordatorios en su calendario y pedirle ayuda visual en pantalla; con inferencia y reconocimiento de voz procesados en tu propia PC sin pagar suscripciones mensuales.",
         caracteristicas: [
-            "🎙️ <strong>Activación y Control por Voz:</strong> Detección de palabra clave (Wake-word), transcripción rápida de voz a texto (STT) y respuesta hablada con voces naturales sintetizadas (TTS).",
+            "🎙️ <strong>Activación y Control por Voz:</strong> Detección de palabra clave (Wake-word) con audio ducking inteligente, transcripción ultrarrápida (Faster-Whisper / Vosk) y síntesis de voz neuronal local con <strong>Piper TTS (voz argentina rioplatense 'Daniela')</strong>, streaming de audio y fallback nativo SAPI5.",
             "⏰ <strong>Programador de Tareas & Agenda:</strong> Calendario interactivo integrado para crear recordatorios, eventos y alarmas con alertas visuales y auditivas en pantalla.",
             "🚀 <strong>Automatización de Windows:</strong> Orquestación del sistema operativo para apertura programada de software (ej. Discord, navegadores, herramientas de trabajo) a horas específicas.",
             "👁️ <strong>Visión Multimodal:</strong> Captura y análisis inteligente de lo que el usuario está viendo en pantalla en tiempo real sin requerir salir al escritorio.",
-            "✨ <strong>Interfaz Gráfica Transparente:</strong> Ventana borderless en Godot 4.3 con modos ajustables (lateral/inferior), arrastre fluido, modo Always on Top y redimensión nativa de bordes."
+            "✨ <strong>Interfaz Gráfica Transparente:</strong> Ventana borderless en Godot 4.3 con modos acoplables, arrastre fluido mediante Win32 API, Always on Top y sistema de auto-actualización liviana de parches (Hot-Patching) con validación AST."
         ],
         problemas: [
             "🧩 <strong>Fricción y pérdida de tiempo:</strong> Automatiza la apertura y monitoreo de herramientas cotidianas para que no pierdas el foco buscando programas o cambiando de ventanas.",
@@ -53,7 +53,7 @@ const PROYECTOS = [
             "🏛️ <strong>Arquitectura MVC en PHP 8.2:</strong> Separación estricta de responsabilidades (Modelos, Vistas, Controladores) sin frameworks pesados, con Singleton en conexión a base de datos para cuidar la memoria RAM.",
             "🔌 <strong>API RESTful JSON:</strong> Endpoints de alta velocidad consumidos por el cliente de escritorio Godot para login criptográfico y sincronización instantánea de inventario.",
             "🛒 <strong>Marketplace de Mascotas & Créditos:</strong> Sistema de catálogo dinámico, adopción de personajes animados y gestión de perfiles de usuario.",
-            "🛡️ <strong>Seguridad y Hardening:</strong> PDO con consultas preparadas nativas contra inyecciones SQL, hashing de contraseñas con Bcrypt y sesiones seguras (HttpOnly, SameSite).",
+            "🛡️ <strong>Hardening Integral & Criptografía:</strong> Tokens anti-CSRF por formulario, validación de archivos con <code>finfo</code> para MIME real (prevención de RCE), sanitización contra Email Header Injection, hashing Bcrypt y sesiones seguras (HttpOnly, SameSite).",
             "✉️ <strong>Correos Transaccionales (PHPMailer):</strong> Recuperación segura de contraseñas mediante tokens criptográficos aleatorios con caducidad temporal."
         ],
         problemas: [
@@ -122,28 +122,31 @@ const PROYECTOS = [
     },
     {
         id: "mayorista-erp",
-        titulo: "Mayorista ERP — Sistema Integral de Gestión Comercial & Facturación",
+        titulo: "Suite Empresarial Laravel 11 — Mayorista ERP, Abastecimiento & TDD",
         categoria: "web",
-        categoriaLabel: "Plataforma Web / ERP Empresarial",
-        destacado: false,
-        estado: "dev",
-        rol: "Desarrollador Web Full Stack",
-        estadoLabel: "En Desarrollo",
+        categoriaLabel: "ERP Empresarial / Laravel 11 & TDD",
+        destacado: true,
+        estado: "prod",
+        rol: "Arquitecto Backend & Desarrollador Full Stack",
+        estadoLabel: "Ecosistema Modular (391 Tests Pasados)",
         imagen: "assets/img/mx3_project_logo.png",
-        resumen: "Plataforma web centralizada para comercios mayoristas y distribuidores: gestión de inventario multinivel, listas de precios diferenciadas, control de cuentas corrientes, facturación y panel de administración en PHP 8 y MySQL.",
+        resumen: "Ecosistema empresarial de alto rendimiento en Laravel 11 desarrollado con arquitectura limpia y cobertura exhaustiva de pruebas (391 tests unitarios y de integración con PHPUnit / Pest). Integra gestión de importaciones marítimas y terrestres (Bazar), costeo dinámico de fletes y aranceles, inventario multinivel con control de bajo stock, y submódulos desacoplados de e-commerce y membresías.",
         caracteristicas: [
-            "📊 <strong>Gestión de Inventario Multinivel:</strong> Control en tiempo real de existencias, alertas automáticas de stock crítico y categorización avanzada de artículos.",
-            "🏷️ <strong>Listas de Precios Diferenciadas:</strong> Asignación flexible de precios mayoristas, minoristas y promocionales por tipo de cliente o volumen de compra.",
-            "👥 <strong>Cuentas Corrientes & Facturación:</strong> Seguimiento detallado de saldos pendientes, historial de compras de clientes y emisión de comprobantes.",
-            "🔒 <strong>Arquitectura Empresarial en PHP 8 & MySQL:</strong> Despliegue en servidor propio (Oracle Cloud) con roles de usuario jerárquicos y aislamiento de datos."
+            "🚢 <strong>Circuito Integral de Abastecimiento & Bazar:</strong> Seguimiento de embarques internacionales, cálculo dinámico de fletes, aranceles aduaneros y prorrateo de costos unitarios en tiempo real.",
+            "📊 <strong>Control de Stock Mínimo & Punto de Pedido:</strong> Algoritmo de reabastecimiento inteligente con detección de rotura de stock y compras en lote automatizadas.",
+            "💰 <strong>Precisión Financiera Estricta:</strong> Manejo de importes monetarios en DECIMAL(12,2) para evitar desvíos de coma flotante, e indexación compuesta optimizada en bases de datos.",
+            "🧪 <strong>Calidad de Código & TDD Exhaustivo:</strong> Suite completa de 391 tests automatizados (853 aserciones, 0 fallos), prevención sistemática de consultas N+1 y tipado estricto.",
+            "🧩 <strong>Módulos Especializados:</strong> Catálogo E-Commerce optimizado, gestión de socios para gimnasios con control de vigencia, y portal editorial con cálculo de tiempo de lectura."
         ],
         problemas: [
-            "📉 <strong>Pérdida de stock y descontrol de precios:</strong> Elimina el error humano automatizando el cálculo de márgenes y actualizando inventarios al instante.",
-            "💸 <strong>Altos costos de sistemas enlatados:</strong> Ofrece una solución a medida sin tarifas mensuales por usuario ni ataduras a plataformas propietarias."
+            "📉 <strong>Pérdida de márgenes y desvíos aduaneros:</strong> Automatiza el cálculo exacto de costos aduaneros y fletes, garantizando márgenes de rentabilidad precisos en cada lote.",
+            "⚠️ <strong>Quiebres de stock imprevistos:</strong> Alerta tempranamente sobre productos críticos antes de que se agoten y agrupa pedidos a proveedores en un solo clic.",
+            "🐌 <strong>Lentitud y cuellos de botella en bases de datos:</strong> Optimización de consultas con Eager Loading (with) e índices compuestos en claves de búsqueda y filtrado frecuente."
         ],
-        stack: ["PHP 8", "MySQL", "JavaScript ES6+", "Nginx", "Cloud VPS", "Seguridad Web"],
+        stack: ["Laravel 11", "PHP 8.2", "MySQL", "PHPUnit / Pest (391 Tests)", "Tailwind CSS", "Blade Components", "Arquitectura Modular"],
         enlaces: {
-            proximamente: "En Desarrollo"
+            github: "https://github.com/Mrcx3",
+            proximamente: "Suite Empresarial Modular"
         }
     }
 ];
@@ -188,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let accionesHtml = "";
             if (p.enlaces.web) {
                 accionesHtml += `
-                    <a href="${p.enlaces.web}" target="_blank" rel="noopener" class="btn-card btn-card-primary">
+                    <a href="${p.enlaces.web}" target="_blank" rel="noopener noreferrer" class="btn-card btn-card-primary">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
                         Ver Plataforma Web
                     </a>
@@ -204,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             if (p.enlaces.github) {
                 accionesHtml += `
-                    <a href="${p.enlaces.github}" target="_blank" rel="noopener" class="btn-card btn-card-secondary">
+                    <a href="${p.enlaces.github}" target="_blank" rel="noopener noreferrer" class="btn-card btn-card-secondary">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         Código en GitHub
                     </a>
@@ -212,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             if (p.enlaces.descarga) {
                 accionesHtml += `
-                    <a href="${p.enlaces.descarga}" target="_blank" rel="noopener" class="btn-card btn-card-outline">
+                    <a href="${p.enlaces.descarga}" target="_blank" rel="noopener noreferrer" class="btn-card btn-card-outline">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
                         Descargar App (.exe)
                     </a>

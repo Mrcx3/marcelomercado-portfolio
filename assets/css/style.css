@@ -961,3 +961,23 @@ body {
     color: var(--text-main);
     font-weight: 500;
 }
+
+/* Accesibilidad: Enlace directo al contenido principal */
+.skip-to-content {
+    position: fixed;
+    top: -100px;
+    left: 20px;
+    background: var(--cyan);
+    color: #050814;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+    z-index: 99999;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    transition: top 0.25s ease-in-out;
+}
+.skip-to-content:focus {
+    top: 20px;
+    outline: 3px solid var(--purple);
+}
