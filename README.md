@@ -61,5 +61,5 @@ Desplegado y acelerado globalmente en **Cloudflare Pages** con CDN perimetral, S
 
 * 🌐 **Portfolio en Vivo:** [https://marcelomercado.pages.dev](https://marcelomercado.pages.dev)
 * 💼 **LinkedIn:** [linkedin.com/in/marcelo-mercado-mx3](https://www.linkedin.com/in/marcelo-mercado-mx3)
-* 📧 **Correo Electrónico:** [marcelo.m95@hotmail.com](mailto:marcelo.m95@hotmail.com)
+* 📧 **Correo Electrónico:** [marcelomercado.dev@gmail.com](mailto:marcelomercado.dev@gmail.com)
 * 🐙 **GitHub:** [github.com/Mrcx3](https://github.com/Mrcx3)
