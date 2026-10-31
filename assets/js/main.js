@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ==============================================================================
  * MARCELO MERCADO (Mrcx3) — PORTFOLIO & HUB DE PROYECTOS
  * ==============================================================================
@@ -205,13 +205,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     </span>
                 `;
             }
-                        if (p.enlaces.codigoPedido) {
-                accionesHtml += 
+            if (p.enlaces.codigoPedido) {
+                accionesHtml += `
                     <span class="btn-card btn-card-outline" title="Repositorio privado. Código disponible a pedido para selección o entrevistas técnicas.">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
                         Código a pedido
                     </span>
-                ;
+                `;
             }
             if (p.enlaces.github) {
                 accionesHtml += `
