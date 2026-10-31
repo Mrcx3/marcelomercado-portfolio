@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcelo Mercado — Desarrollador Full Stack & Software de Escritorio</title>
-    <meta name="description" content="Portfolio profesional de Marcelo Mercado. Desarrollador especializado en aplicaciones de escritorio interactivas, integración de IA local, automatización de sistemas y plataformas web full stack.">
+    <title>Marcelo Mercado — Soporte técnico IT y desarrollo de software</title>
+    <meta name="description" content="Portfolio de Marcelo Mercado. Técnico Universitario en Programación con 8 años de soporte IT independiente. Desarrollo web y backend, automatización de Windows e IA local.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Accesibilidad: Enlace directo al contenido principal -->
-    <a href="#proyectos" class="skip-to-content">Saltar al contenido principal</a>
+    <a href="#sobre-mi" class="skip-to-content">Saltar al contenido principal</a>
     <div class="background-glow glow-1"></div>
     <div class="background-glow glow-2"></div>
     <div class="grid-overlay"></div>
@@ -27,8 +27,10 @@
             </a>
             <nav class="nav-links">
                 <a href="#sobre-mi" class="nav-item">Sobre Mí</a>
+                <a href="#soporte-it" class="nav-item">Soporte IT</a>
                 <a href="#proyectos" class="nav-item">Proyectos</a>
                 <a href="#tecnologias" class="nav-item">Stack Técnico</a>
+                <a href="#formacion" class="nav-item">Formación</a>
                 <a href="#contacto" class="nav-item">Contacto</a>
             </nav>
             <div class="nav-actions">
@@ -48,27 +50,35 @@
         </div>
     </header>
 
-    <!-- Sección Hero / Perfil de Presentación para CV -->
-    <section class="hero-section" id="sobre-mi">
+    <!-- 1. Portada / Hero -->
+    <section class="hero-section">
         <div class="hero-container">
             <div class="profile-header-badge">
-                <span class="avatar-icon">👨‍💻</span>
-                <span>Desarrollador de Software &middot; Full Stack &middot; IA Local</span>
+                <span class="avatar-icon">🛠️</span>
+                <span>Soporte técnico IT · Desarrollo de software</span>
             </div>
             
             <h1 class="hero-title">
                 Marcelo Mercado<br>
-                <span class="gradient-text">Software de Escritorio, IA & Web</span>
+                <span class="gradient-text">Soporte IT, Backend & IA Local</span>
             </h1>
             
             <p class="hero-subtitle">
-                Especializado en la creación de software interactivo con motores gráficos, integración de modelos de lenguaje locales (Local-First), automatización de sistemas operativos Windows y arquitecturas backend robustas en PHP y MySQL.
+                Técnico Universitario en Programación (UTN) con 8 años de soporte IT independiente. Desarrollo plataformas web en PHP y MySQL, automatización de Windows y asistentes con IA local-first.
             </p>
 
             <div class="hero-actions">
+                <a href="assets/cv/CV_Marcelo_Mercado_Soporte_IT.pdf" download class="btn btn-cv-it">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Descargar CV Soporte IT
+                </a>
+                <a href="assets/cv/CV_Marcelo_Mercado_Desarrollo.pdf" download class="btn btn-cv-dev">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Descargar CV Desarrollo
+                </a>
                 <a href="#proyectos" class="btn btn-primary">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    Explorar Proyectos
+                    Ver Proyectos
                 </a>
                 <a href="https://www.linkedin.com/in/marcelo-mercado-mx3" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -78,42 +88,120 @@
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     GitHub
                 </a>
-                <a href="mailto:marcelomercado.dev@gmail.com" class="btn btn-secondary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    Correo
-                </a>
             </div>
             
-            <!-- Métricas / Puntos destacados para CV -->
+            <!-- Las 4 etiquetas destacadas -->
             <div class="metrics-grid">
                 <div class="metric-item">
-                    <span class="metric-number">Full Stack</span>
-                    <span class="metric-desc">Web, Desktop & APIs</span>
+                    <span class="metric-number">Soporte IT</span>
+                    <span class="metric-desc">Hardware, Windows y recuperación de datos</span>
                 </div>
                 <div class="metric-item">
-                    <span class="metric-number">Local-First</span>
-                    <span class="metric-desc">IA Local-First en tu PC</span>
+                    <span class="metric-number">Backend</span>
+                    <span class="metric-desc">PHP, MySQL y Python</span>
                 </div>
                 <div class="metric-item">
-                    <span class="metric-number">Automatización</span>
-                    <span class="metric-desc">Win32 API & Orquestación OS</span>
+                    <span class="metric-number">IA local-first</span>
+                    <span class="metric-desc">llama.cpp & inferencia offline</span>
                 </div>
                 <div class="metric-item">
-                    <span class="metric-number">Cloud VPS</span>
-                    <span class="metric-desc">Linux, Nginx & DevOps</span>
+                    <span class="metric-number">Cloud</span>
+                    <span class="metric-desc">VPS Linux, Nginx & DevOps</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Proyectos -->
+    <!-- 2. Sobre Mí -->
+    <section class="about-section" id="sobre-mi">
+        <div class="section-container">
+            <span class="section-tag">PERFIL PROFESIONAL</span>
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-card">
+                <p class="about-text">
+                    Técnico Universitario en Programación (UTN-FRH) con 8 años de soporte IT independiente: hardware, upgrades, Windows, recuperación de datos y malware. Desde 2023 me formo en desarrollo: construí la plataforma web de Baity (PHP, MySQL, VPS Linux) y el backend en Python de su asistente con IA local. Busco mi primera posición en Soporte IT o Desarrollo Jr.
+                </p>
+                <div class="cv-buttons-row">
+                    <span class="cv-buttons-title">Descargar Currículum Vitae (PDF sin foto):</span>
+                    <a href="assets/cv/CV_Marcelo_Mercado_Soporte_IT.pdf" download class="btn-cv btn-cv-it">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        Descargar CV Soporte IT
+                    </a>
+                    <a href="assets/cv/CV_Marcelo_Mercado_Desarrollo.pdf" download class="btn-cv btn-cv-dev">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        Descargar CV Desarrollo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Soporte IT (6 tarjetas + Cierre) -->
+    <section class="it-support-section" id="soporte-it">
+        <div class="section-container">
+            <span class="section-tag">EXPERIENCIA TÉCNICA</span>
+            <h2 class="section-title">Soporte Técnico IT</h2>
+            <p class="section-subtitle">Servicios de soporte independiente y mantenimiento integral de infraestructura informática.</p>
+
+            <div class="it-grid">
+                <!-- Tarjeta 1 -->
+                <div class="it-card">
+                    <span class="it-card-icon">🔧</span>
+                    <h3 class="it-card-title">Diagnóstico y reparación de hardware</h3>
+                    <p class="it-card-desc">Detección y resolución de fallas en placas base, fuentes, memorias RAM, almacenamiento y periféricos con reemplazo de componentes.</p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="it-card">
+                    <span class="it-card-icon">⚙️</span>
+                    <h3 class="it-card-title">Upgrades y armado de PCs</h3>
+                    <p class="it-card-desc">Ensamblado a medida para oficina, gaming y workstations. Optimización de flujo térmico, gestión de cables y selección de componentes.</p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="it-card">
+                    <span class="it-card-icon">🪟</span>
+                    <h3 class="it-card-title">Windows: instalación, mantenimiento y optimización</h3>
+                    <p class="it-card-desc">Instalaciones limpias de Windows 10/11, optimización profunda de servicios y registro, configuración de políticas y automatización.</p>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="it-card">
+                    <span class="it-card-icon">💾</span>
+                    <h3 class="it-card-title">Recuperación de datos y clonado a SSD/M.2</h3>
+                    <p class="it-card-desc">Rescate de archivos en discos con sectores dañados o particiones inaccesibles. Migración íntegra de sistemas operativos sin pérdida de datos.</p>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="it-card">
+                    <span class="it-card-icon">🛡️</span>
+                    <h3 class="it-card-title">Malware y filtrado DNS (Cloudflare)</h3>
+                    <p class="it-card-desc">Desinfección integral de amenazas, virus y troyanos. Implementación de DNS seguro cifrado con bloqueo de publicidad y dominios maliciosos.</p>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="it-card">
+                    <span class="it-card-icon">📱</span>
+                    <h3 class="it-card-title">Dispositivos móviles</h3>
+                    <p class="it-card-desc">Android (root, ROMs, formateo y optimización) e iOS (automatización con Atajos y sincronización del sistema).</p>
+                </div>
+            </div>
+
+            <!-- Cierre de sección -->
+            <div class="it-highlight-banner">
+                <span class="it-highlight-badge">🤝 “Trabajo sostenido por recomendación desde 2018”</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sección de Proyectos -->
     <section class="projects-section" id="proyectos">
         <div class="section-container">
             <div class="section-header">
                 <div>
                     <span class="section-tag">PORTFOLIO DE PROYECTOS</span>
                     <h2 class="section-title">Desarrollos Destacados</h2>
-                    <p class="section-subtitle">Casos prácticos con código fuente, arquitecturas de software y aplicaciones en producción.</p>
+                    <p class="section-subtitle">Proyectos en los que trabajé. Código disponible a pedido.</p>
                 </div>
                 
                 <!-- Filtros dinámicos -->
@@ -132,68 +220,129 @@
         </div>
     </section>
 
-    <!-- Sección de Tecnologías -->
+    <!-- 5. Sección de Tecnologías (Stack Técnico) -->
     <section class="tech-section" id="tecnologias">
         <div class="section-container">
             <span class="section-tag text-center block">COMPETENCIAS & HERRAMIENTAS</span>
             <h2 class="section-title text-center">Stack Tecnológico & Arquitectura</h2>
-            <p class="section-subtitle text-center">Herramientas y tecnologías aplicadas en proyectos de desarrollo y entornos de despliegue.</p>
+            <p class="section-subtitle text-center">Herramientas y tecnologías aplicadas en soporte técnico, desarrollo de software y entornos de despliegue.</p>
             
             <div class="tech-categories">
-                <!-- Categoría 1: Desktop & IA -->
-                <div class="tech-cat-box">
-                    <h3 class="tech-cat-title">🎮 Software de Escritorio & IA Local</h3>
-                    <div class="tech-items-wrap">
-                        <div class="tech-pill"><strong>Godot Engine 4.x</strong> (GDScript, Ventanas Borderless Transparentes)</div>
-                        <div class="tech-pill"><strong>Python 3</strong> (Backend de Inferencia & Multiprocesamiento)</div>
-                        <div class="tech-pill"><strong>Reconocimiento de Voz</strong> (Faster-Whisper, Vosk, SpeechRecognition)</div>
-                        <div class="tech-pill"><strong>Síntesis de Voz (TTS)</strong> (Piper TTS Rioplatense, Edge-TTS, SAPI5)</div>
-                        <div class="tech-pill"><strong>LLMs Locales</strong> (Ollama, GGUF, LLaMA / Qwen cuantizados)</div>
-                        <div class="tech-pill"><strong>Automatización Windows</strong> (Win32 API, PyAutoGUI, Task Scheduling)</div>
-                    </div>
-                </div>
-
-                <!-- Categoría 2: Web & Backend -->
-                <div class="tech-cat-box">
-                    <h3 class="tech-cat-title">🐘 Backend & Arquitectura Web</h3>
-                    <div class="tech-items-wrap">
-                        <div class="tech-pill"><strong>PHP 8.2 & Laravel 11</strong> (Patrón MVC, TDD con PHPUnit, Singleton, POO Avanzada)</div>
-                        <div class="tech-pill"><strong>APIs RESTful</strong> (JSON Endpoints, Control de CORS, Autenticación)</div>
-                        <div class="tech-pill"><strong>Seguridad Web</strong> (CSRF Hardening, Fileinfo MIME Real, PDO Prepared, Bcrypt, Hardened Sessions)</div>
-                        <div class="tech-pill"><strong>PHPMailer</strong> (Correos Transaccionales SMTP & Tokens Criptográficos)</div>
-                        <div class="tech-pill"><strong>Frontend Web</strong> (Blade Components, Tailwind CSS, HTML5 Semántico, JS ES6+)</div>
-                    </div>
-                </div>
-
-                <!-- Categoría 3: Datos & Cloud -->
-                <div class="tech-cat-box">
-                    <h3 class="tech-cat-title">🗄️ Bases de Datos, Cloud & DevOps</h3>
-                    <div class="tech-items-wrap">
-                        <div class="tech-pill"><strong>MySQL & MariaDB</strong> (Modelado Relacional, Claves Foráneas en Cascada)</div>
-                        <div class="tech-pill"><strong>Linux Ubuntu & VPS</strong> (Administración básica por SSH, Nginx, Let's Encrypt, Swap y permisos)</div>
-                        <div class="tech-pill"><strong>Nginx Web Server</strong> (Virtual Hosts, Reverse Proxy, Protección de Archivos)</div>
-                        <div class="tech-pill"><strong>SSL / TLS</strong> (Certificados automatizados Let's Encrypt / Certbot)</div>
-                        <div class="tech-pill"><strong>Git & GitHub</strong> (Control de Versiones, Gestión de Ramas y Releases)</div>
-                    </div>
-                </div>
-
-                <!-- Categoría 4: Infraestructura IT & Soporte Técnico -->
+                <!-- Categoría 1: IT & Soporte Técnico (PRIMERO) -->
                 <div class="tech-cat-box">
                     <h3 class="tech-cat-title">🛠️ Infraestructura IT, Redes & Soporte Técnico</h3>
                     <div class="tech-items-wrap">
                         <div class="tech-pill"><strong>Armado & Ensamblado de PCs</strong> (Gamer y Workstation, selección de componentes y presupuestos)</div>
                         <div class="tech-pill"><strong>Mantenimiento & Upgrades</strong> (Diagnóstico preventivo/correctivo de hardware, recambio de piezas y optimización térmica)</div>
-                        <div class="tech-pill"><strong>Sistemas Operativos</strong> (Windows 10, Windows 11, optimización de registro, servicios y rendimiento)</div>
-                        <div class="tech-pill"><strong>Redes LAN</strong> (Configuración de routers, direccionamiento IP, DHCP, DNS y diagnóstico de conectividad)</div>
-                        <div class="tech-pill"><strong>Automatización de Sistemas</strong> (Scripts Batch / PowerShell para mantenimiento preventivo y tareas programadas)</div>
-                        <div class="tech-pill"><strong>IA Local & Entornos RAG</strong> (OpenWebUI, OpenCode, llama.cpp, Protocolo MCP con Puppeteer)</div>
+                        <div class="tech-pill"><strong>Sistemas Operativos Windows</strong> (Windows 10, Windows 11, optimización de registro, servicios y rendimiento)</div>
+                        <div class="tech-pill"><strong>Redes</strong> (nociones prácticas: IP, DHCP, DNS, diagnóstico de conectividad, filtrado DNS)</div>
+                        <div class="tech-pill"><strong>Dispositivos móviles</strong> (Android: root, ROMs, optimización · iOS: Atajos · DNS con filtrado)</div>
+                        <div class="tech-pill"><strong>Automatización con PowerShell</strong> (Scripts .ps1 y .bat para mantenimiento, Win32 API y tareas programadas)</div>
+                    </div>
+                </div>
+
+                <!-- Categoría 2: Backend & Web -->
+                <div class="tech-cat-box">
+                    <h3 class="tech-cat-title">🐘 Backend & Arquitectura Web</h3>
+                    <div class="tech-items-wrap">
+                        <div class="tech-pill"><strong>Laravel 11, Blade, Tailwind & PHPUnit</strong> (Patrón MVC, Componentes Blade, TDD y pruebas automatizadas)</div>
+                        <div class="tech-pill"><strong>PHP 8.2+ Nativo</strong> (Arquitectura MVC, POO Avanzada, PDO Prepared Statements, Sesiones y Autenticación)</div>
+                        <div class="tech-pill"><strong>APIs RESTful</strong> (JSON Endpoints, control de CORS, tokens y consumo desde desktop)</div>
+                        <div class="tech-pill"><strong>Seguridad Web</strong> (Protección CSRF, sesiones seguras, validación de MIME real, sentencias preparadas y Bcrypt)</div>
+                        <div class="tech-pill"><strong>PHPMailer</strong> (Correos Transaccionales SMTP y tokens de recuperación)</div>
+                    </div>
+                </div>
+
+                <!-- Categoría 3: Desktop & IA Local -->
+                <div class="tech-cat-box">
+                    <h3 class="tech-cat-title">🎮 Software de Escritorio & IA Local-First</h3>
+                    <div class="tech-items-wrap">
+                        <div class="tech-pill"><strong>Godot Engine 4.x</strong> (GDScript, Ventanas Borderless Transparentes, Win32 API)</div>
+                        <div class="tech-pill"><strong>Python 3</strong> (Backend de Inferencia Local, Multiprocesamiento y Orquestación OS)</div>
+                        <div class="tech-pill"><strong>Modelos LLM Locales</strong> (llama.cpp, formatos GGUF, inferencia offline sin suscripciones de API)</div>
+                        <div class="tech-pill"><strong>Reconocimiento de Voz</strong> (Faster-Whisper, Vosk, SpeechRecognition)</div>
+                        <div class="tech-pill"><strong>Síntesis de Voz (TTS)</strong> (Edge-TTS y fallback nativo SAPI5 de Windows)</div>
+                        <div class="tech-pill"><strong>Automatización Windows</strong> (Win32 API, PyAutoGUI, control de ventanas y eventos)</div>
+                    </div>
+                </div>
+
+                <!-- Categoría 4: Datos & Cloud -->
+                <div class="tech-cat-box">
+                    <h3 class="tech-cat-title">🗄️ Bases de Datos, Cloud & DevOps</h3>
+                    <div class="tech-items-wrap">
+                        <div class="tech-pill"><strong>MySQL, MariaDB & SQLite</strong> (Modelado Relacional, Claves Foráneas, Migraciones e Indexación)</div>
+                        <div class="tech-pill"><strong>Linux Ubuntu & VPS</strong> (Oracle Cloud Always Free, administración por SSH, Swap y permisos)</div>
+                        <div class="tech-pill"><strong>Nginx Web Server</strong> (Virtual Hosts, Reverse Proxy, Protección de Directorios y FastCGI)</div>
+                        <div class="tech-pill"><strong>SSL / TLS</strong> (Certificados automatizados Let's Encrypt / Certbot)</div>
+                        <div class="tech-pill"><strong>Git & GitHub</strong> (Control de Versiones, Gestión de Ramas y Releases)</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Contacto para Reclutadores -->
+    <!-- 6. Formación y Certificaciones -->
+    <section class="education-section" id="formacion">
+        <div class="section-container">
+            <span class="section-tag text-center block">TRAYECTORIA ACADÉMICA</span>
+            <h2 class="section-title text-center">Formación & Certificaciones</h2>
+            <p class="section-subtitle text-center">Educación formal universitaria y capacitaciones especializadas en desarrollo y tecnología.</p>
+
+            <div class="education-grid">
+                <!-- UTN -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <span class="education-institution">Universidad Tecnológica Nacional (UTN-FRH)</span>
+                        <span class="education-status-tag tramite">Título en trámite</span>
+                    </div>
+                    <h3 class="education-title">Técnico Universitario en Programación</h3>
+                    <p class="education-desc">Formación universitaria integral en algoritmos, estructuras de datos, programación orientada a objetos (POO), bases de datos relacionales, arquitectura de sistemas y metodologías de desarrollo.</p>
+                </div>
+
+                <!-- Egg Live -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <span class="education-institution">Egg Live</span>
+                        <span class="education-status-tag">Completado</span>
+                    </div>
+                    <h3 class="education-title">Programación Web Full Stack</h3>
+                    <p class="education-desc">Entrenamiento intensivo en desarrollo web, colaboración ágil en equipos interdisciplinarios, arquitectura cliente-servidor y construcción práctica de software.</p>
+                </div>
+
+                <!-- Google Cloud -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <span class="education-institution">Google Cloud</span>
+                        <span class="education-status-tag">Certificación</span>
+                    </div>
+                    <h3 class="education-title">Google Cloud Foundations</h3>
+                    <p class="education-desc">Fundamentos de computación en la nube, infraestructura virtualizada, despliegue de servicios, redes, almacenamiento seguro y gestión de recursos en cloud.</p>
+                </div>
+
+                <!-- Testing QA -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <span class="education-institution">Capacitación Técnica</span>
+                        <span class="education-status-tag">Certificación</span>
+                    </div>
+                    <h3 class="education-title">Testing QA (Calidad de Software)</h3>
+                    <p class="education-desc">Diseño y ejecución de planes de pruebas, testing funcional, detección y reporte de bugs, validación de requerimientos y aseguramiento de calidad.</p>
+                </div>
+
+                <!-- Looker Studio -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <span class="education-institution">Google</span>
+                        <span class="education-status-tag">Certificación</span>
+                    </div>
+                    <h3 class="education-title">Looker Studio</h3>
+                    <p class="education-desc">Modelado de datos, creación de tableros de control interactivos (dashboards), análisis visual de métricas y presentación clara de indicadores clave.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Sección de Contacto -->
     <section class="contact-section" id="contacto">
         <div class="section-container">
             <div class="contact-card">
@@ -201,7 +350,7 @@
                     <span class="section-tag">CONVERSEMOS</span>
                     <h2 class="contact-title">¿Tenés una propuesta o proyecto en mente?</h2>
                     <p class="contact-subtitle">
-                        Estoy disponible para posiciones de desarrollo de software, desarrollo backend, proyectos de automatización con IA o colaboraciones técnicas.
+                        Estoy disponible para posiciones de soporte técnico IT, help desk y desarrollo junior (backend), y para colaboraciones técnicas.
                     </p>
                     <div class="contact-details">
                         <div class="contact-detail-item">

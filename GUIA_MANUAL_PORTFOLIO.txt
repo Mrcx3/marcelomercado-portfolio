@@ -1,0 +1,68 @@
+﻿================================================================================
+GUIA MANUAL DE ACTUALIZACION - PORTFOLIO MARCELO MERCADO
+================================================================================
+
+Este proyecto cuenta con dos entornos de despliegue:
+1. Cloudflare Pages (Gratis, CDN global, dominio: https://marcelomercado.pages.dev/)
+2. VPS Oracle Cloud Santiago (Servidor Linux Nginx, IP: http://146.181.24.196/)
+
+--------------------------------------------------------------------------------
+METODO A: ACTUALIZACION MANUAL EN CLOUDFLARE PAGES (VIA GITHUB)
+--------------------------------------------------------------------------------
+Cada vez que modificás `index.html` o los archivos en `assets/`, Cloudflare Pages
+detecta el cambio automáticamente al hacer `git push`:
+
+1. Abrí la terminal (PowerShell o CMD) en la carpeta del portfolio:
+   cd G:\Programas\PROYECTOSMX3\marcelomercado-portfolio
+
+2. Agregá todos los cambios al control de versiones:
+   git add .
+
+3. Creá un commit con un mensaje descriptivo:
+   git commit -m "Actualizacion de experiencia y proyectos"
+
+4. Subí los cambios a GitHub:
+   git push origin main
+
+5. Listo. En 30 a 60 segundos el sitio en https://marcelomercado.pages.dev/
+   estará actualizado a nivel mundial con certificado SSL automático.
+
+
+--------------------------------------------------------------------------------
+METODO B: ACTUALIZACION MANUAL EN EL VPS ORACLE CLOUD
+--------------------------------------------------------------------------------
+Datos del servidor:
+- IP Pública: 146.181.24.196
+- Usuario: ubuntu
+- Clave SSH privada: %VPS_SSH_KEY%
+- Directorio web de destino: /var/www/hub/
+
+Paso 1: Conectarte por SSH para verificar el estado
+Abrí PowerShell y ejecutá:
+   ssh -i "%VPS_SSH_KEY%" ubuntu@146.181.24.196
+
+Paso 2: Subir tus archivos locales al servidor
+Desde tu computadora (en una nueva ventana de PowerShell parada en la carpeta del portfolio):
+Podés empaquetar y transferir en una sola línea ultra rápida:
+   tar -czf update.tar.gz index.html assets _headers
+   scp -i "%VPS_SSH_KEY%" update.tar.gz ubuntu@146.181.24.196:/var/www/hub/
+
+Paso 3: Desempaquetar y aplicar permisos en el VPS
+Dentro de la sesión SSH del VPS, ejecutá:
+   cd /var/www/hub
+   tar -xzf update.tar.gz
+   rm -f update.tar.gz
+   sudo chown -R ubuntu:www-data /var/www/hub
+   sudo chmod -R 755 /var/www/hub
+   sudo systemctl reload nginx
+
+Paso 4: Limpieza local
+En tu PowerShell local, borrá el archivo temporal:
+   Remove-Item update.tar.gz
+
+Paso 5: Probar en el navegador
+Ingresá a:
+   http://146.181.24.196/
+
+================================================================================
+

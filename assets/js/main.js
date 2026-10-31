@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ==============================================================================
  * MARCELO MERCADO (Mrcx3) — PORTFOLIO & HUB DE PROYECTOS
  * ==============================================================================
@@ -20,7 +20,7 @@ const PROYECTOS = [
         imagen: "assets/img/baity_desktop_demo.gif",
         resumen: "Asistente inteligente para Windows con interfaz interactiva transparente. Podés pedirle por voz que abra programas a una hora programada (como Discord o navegadores), agendar recordatorios en su calendario y pedirle ayuda visual en pantalla; con inferencia y reconocimiento de voz procesados en tu propia PC sin pagar suscripciones mensuales.",
         caracteristicas: [
-            "🎙️ <strong>Activación y Control por Voz:</strong> Detección de palabra clave (Wake-word) con audio ducking inteligente, transcripción ultrarrápida (Faster-Whisper / Vosk) y síntesis de voz neuronal local con <strong>Piper TTS (voz argentina rioplatense 'Daniela')</strong>, streaming de audio y fallback nativo SAPI5.",
+            "🎙️ <strong>Activación y Control por Voz:</strong> Detección de palabra clave (Wake-word) con audio ducking inteligente, transcripción ultrarrápida (Faster-Whisper / Vosk) y síntesis de voz neuronal local con <strong>Edge-TTS y fallback nativo SAPI5</strong>, streaming de audio y fallback nativo SAPI5.",
             "⏰ <strong>Programador de Tareas & Agenda:</strong> Calendario interactivo integrado para crear recordatorios, eventos y alarmas con alertas visuales y auditivas en pantalla.",
             "🚀 <strong>Automatización de Windows:</strong> Orquestación del sistema operativo para apertura programada de software (ej. Discord, navegadores, herramientas de trabajo) a horas específicas.",
             "👁️ <strong>Visión Multimodal:</strong> Captura y análisis inteligente de lo que el usuario está viendo en pantalla en tiempo real sin requerir salir al escritorio.",
@@ -145,7 +145,7 @@ const PROYECTOS = [
         ],
         stack: ["Laravel 11", "PHP 8.2", "MySQL", "PHPUnit / Pest (391 Tests)", "Tailwind CSS", "Blade Components", "Arquitectura Modular"],
         enlaces: {
-            github: "https://github.com/Mrcx3",
+            codigoPedido: true,
             proximamente: "Suite Empresarial Modular"
         }
     }
@@ -204,6 +204,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${p.enlaces.proximamente}
                     </span>
                 `;
+            }
+                        if (p.enlaces.codigoPedido) {
+                accionesHtml += 
+                    <span class="btn-card btn-card-outline" title="Repositorio privado. Código disponible a pedido para selección o entrevistas técnicas.">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                        Código a pedido
+                    </span>
+                ;
             }
             if (p.enlaces.github) {
                 accionesHtml += `
